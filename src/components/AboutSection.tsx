@@ -1,48 +1,34 @@
 import aboutImg from "@/assets/about-img.jpg";
+import { Leaf } from "lucide-react";
 
 const AboutSection = () => (
-  <section id="about" className="py-20 lg:py-28" style={{ background: "var(--gradient-sand)" }}>
-    <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-      <div className="relative">
+  <section id="about" className="py-20 lg:py-28 bg-background">
+    <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
+      <div className="space-y-5">
+        <p className="section-label">About Us</p>
+        <h2 className="section-heading">
+          Your Barrier Island Plant Experts
+        </h2>
+        <p className="text-base text-muted-foreground leading-relaxed font-medium">
+          Floridana Tropicals Inc., a Melbourne Beach gem, specializes in Florida native and dune-hardy plants. 
+          Born from Beth and Coddy's passion for coastal ecology, we're now the barrier island's most trusted 
+          source for salt-spray-tested, expert-curated species that thrive in sandy soil and harsh conditions — 
+          ensuring beautiful, enduring landscapes.
+        </p>
+        <div className="flex items-center gap-2 pt-2">
+          <Leaf className="w-5 h-5 text-secondary" />
+          <span className="text-base font-extrabold uppercase tracking-wide text-foreground">Floridana Tropicals</span>
+        </div>
+      </div>
+      <div>
         <img
           src={aboutImg}
           alt="Sea oats on Melbourne Beach dunes"
-          className="rounded-xl object-cover w-full max-h-[500px]"
-          style={{ boxShadow: "var(--shadow-elevated)" }}
+          className="rounded-lg object-cover w-full h-[420px] shadow-lg"
           loading="lazy"
           width={800}
           height={1000}
         />
-      </div>
-      <div className="space-y-6">
-        <p className="section-label">About Us</p>
-        <h2 className="section-heading text-balance">
-          Your Barrier Island Plant Experts Since Day One
-        </h2>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Floridana Tropicals Inc. isn't your typical nursery. Based right here on Melbourne Beach's barrier island,
-          we specialize in Florida native and dune-hardy species that are <strong>proven to thrive</strong> in
-          the 32951 zip code — salt spray, sandy soil, and all.
-        </p>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          Founded by Beth and Coddy, our boutique nursery operates with one mission: helping
-          coastal homeowners create landscapes that survive <em>and</em> flourish without constant
-          maintenance. We trade big-box retail aesthetics for deep expertise and plants that actually work.
-        </p>
-        <div className="flex gap-8 pt-4">
-          <div>
-            <p className="text-3xl font-display font-bold text-primary">100%</p>
-            <p className="text-sm text-muted-foreground">Florida Native</p>
-          </div>
-          <div>
-            <p className="text-3xl font-display font-bold text-primary">32951</p>
-            <p className="text-sm text-muted-foreground">Zip Code Tested</p>
-          </div>
-          <div>
-            <p className="text-3xl font-display font-bold text-primary">5★</p>
-            <p className="text-sm text-muted-foreground">Google Rating</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
