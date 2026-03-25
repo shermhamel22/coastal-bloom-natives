@@ -19,21 +19,21 @@ const images = [
 ];
 
 const GallerySection = () => (
-  <section id="gallery" className="py-20 lg:py-28 bg-primary">
+  <section id="gallery" className="py-20 lg:py-28 bg-background">
     <div className="container mx-auto px-4">
       <div className="flex flex-wrap items-end justify-between gap-4 mb-10">
         <div>
-          <span className="inline-block bg-foreground text-primary-foreground text-xs font-extrabold uppercase tracking-widest px-4 py-1.5 mb-3">
+          <span className="inline-block bg-primary text-primary-foreground text-xs font-extrabold uppercase tracking-widest px-4 py-1.5 mb-3">
             See Why Our Customers Love Us
           </span>
           <div className="flex items-center gap-4">
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-primary-foreground leading-[1.1]">
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-foreground leading-[1.1]">
               See Our Work
             </h2>
             <div className="hidden md:block w-32 h-0.5 bg-secondary" />
           </div>
         </div>
-        <a href="#gallery" className="inline-flex items-center gap-2 px-6 py-3 border-2 border-primary-foreground text-primary-foreground text-xs font-extrabold uppercase tracking-wider rounded hover:bg-primary-foreground/10 transition">
+        <a href="#gallery" className="inline-flex items-center gap-2 px-6 py-3 border-2 border-primary text-primary text-xs font-extrabold uppercase tracking-wider rounded hover:bg-primary hover:text-primary-foreground transition">
           See All Photos →
         </a>
       </div>
