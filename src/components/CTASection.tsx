@@ -1,22 +1,21 @@
-import { Phone, MapPin } from "lucide-react";
+import ctaBg from "@/assets/cta-bg.jpg";
 
 const CTASection = () => (
-  <section id="contact" className="py-20 lg:py-28 bg-primary">
-    <div className="container mx-auto px-4 text-center max-w-3xl">
-      <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-primary-foreground mb-2">
+  <section id="contact" className="relative py-24 lg:py-32">
+    <div className="absolute inset-0">
+      <img src={ctaBg} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={600} />
+      <div className="absolute inset-0 bg-foreground/60" />
+    </div>
+    <div className="relative container mx-auto px-4 text-center max-w-3xl">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase italic tracking-tight text-primary-foreground mb-3 leading-[1.1]">
         Ready to Take the Next Step?
       </h2>
-      <h3 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight text-primary-foreground mb-8">
+      <h3 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase italic tracking-tight text-primary-foreground mb-10 leading-[1.1]">
         Get a Free Quote Today!
       </h3>
-      <div className="flex flex-wrap justify-center gap-4">
-        <a href="tel:+13215551234" className="btn-primary">
-          <Phone className="w-4 h-4" /> Call (321) 555-1234
-        </a>
-        <a href="#hero" className="btn-outline-light">
-          <MapPin className="w-4 h-4" /> Get Free Quote
-        </a>
-      </div>
+      <a href="#hero" className="inline-block px-10 py-4 bg-secondary text-secondary-foreground font-black uppercase tracking-widest text-sm rounded hover:brightness-110 transition">
+        Get a Free Quote
+      </a>
     </div>
   </section>
 );
