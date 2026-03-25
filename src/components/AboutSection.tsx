@@ -2,14 +2,17 @@ import aboutImg from "@/assets/about-img.jpg";
 import { Leaf } from "lucide-react";
 
 const AboutSection = () => (
-  <section id="about" className="py-20 lg:py-28 bg-primary">
+  <section id="about" className="py-20 lg:py-28 bg-background">
     <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-14 items-center">
       <div className="space-y-5">
-        <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-primary-foreground leading-[1.1]">
+        <span className="inline-block bg-primary text-primary-foreground text-xs font-extrabold uppercase tracking-widest px-4 py-1.5">
+          Who We Are
+        </span>
+        <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-foreground leading-[1.1]">
           About Us
         </h2>
         <div className="w-24 h-1 bg-secondary" />
-        <p className="text-base text-primary-foreground/70 leading-relaxed font-medium">
+        <p className="text-base text-muted-foreground leading-relaxed font-medium">
           Floridana Tropicals Inc., a Melbourne Beach gem, specializes in Florida native and dune-hardy plants.
           Born from Beth and Coddy's passion for coastal ecology, we're now the barrier island's most trusted
           source for salt-spray-tested, expert-curated species that thrive in sandy soil and harsh conditions —
@@ -17,7 +20,7 @@ const AboutSection = () => (
         </p>
         <div className="flex items-center gap-2 pt-2">
           <Leaf className="w-5 h-5 text-secondary" />
-          <span className="text-base font-extrabold uppercase tracking-wide text-primary-foreground">Floridana Tropicals</span>
+          <span className="text-base font-extrabold uppercase tracking-wide text-foreground">Floridana Tropicals</span>
         </div>
       </div>
       <div>

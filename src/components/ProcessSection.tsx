@@ -8,7 +8,7 @@ const steps = [
 ];
 
 const ProcessSection = () => (
-  <section className="py-20 lg:py-28 bg-primary border-t border-secondary/20">
+  <section className="py-20 lg:py-28 bg-primary">
     <div className="container mx-auto px-4">
       <div className="mb-14">
         <div className="flex items-center gap-4">
@@ -29,7 +29,7 @@ const ProcessSection = () => (
               <div className="w-20 h-20 rounded-full bg-primary-foreground flex items-center justify-center mb-3 shadow-lg">
                 <s.icon className="w-9 h-9 text-primary" />
               </div>
-              <div className="bg-foreground text-primary-foreground px-5 py-2.5 font-extrabold text-xs uppercase tracking-wider text-center whitespace-pre-line leading-tight clip-arrow min-w-[140px]">
+              <div className="bg-secondary text-secondary-foreground px-5 py-2.5 font-extrabold text-xs uppercase tracking-wider text-center whitespace-pre-line leading-tight min-w-[140px] rounded">
                 {s.title}
               </div>
             </div>
